@@ -1,0 +1,51 @@
+#content {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.donation {
+    display: flex;
+    flex-flow: row wrap;
+
+    height: 9rem;
+    width: 6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.donation .info {
+    opacity: 0;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+    border: 1px solid white;
+    padding: 1rem;
+    transition: opacity 0.1s;
+}
+
+.donation .info p {
+    margin: 0;
+}
+
+.donation:hover .info {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.donation.platelets {
+    background-image: url("../img/platelets-bag.svg");
+}
+
+.donation.plasma {
+    background-image: url("../img/plasma-bag.svg");
+}
+
+.donation.blood {
+    background-image: url("../img/blood-bag.svg");
+}
